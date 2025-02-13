@@ -1,0 +1,12 @@
+Explications des modifications
+Fonction wifi_scan :
+Cette fonction utilise esp_wifi_scan_start pour scanner les réseaux Wi-Fi disponibles.
+Les résultats sont stockés dans un tableau wifi_ap_record_t.
+Gestionnaire HTTP wifi_list_handler :
+Ce gestionnaire est appelé lorsque l'utilisateur accède à l'URL /wifi-list.
+Il effectue un scan Wi-Fi, construit une réponse HTML contenant la liste des SSID et des niveaux de signal, puis l'envoie au client.
+Route /wifi-list :
+Une nouvelle route a été ajoutée pour afficher la liste des réseaux Wi-Fi.
+
+
+----------------------------------------------------------------------------------------------------------
